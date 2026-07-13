@@ -1,0 +1,42 @@
+\documentclass[12pt,a5paper,twoside,openright]{book}
+
+
+%====================================================
+% TODO-LIST
+% Удалить бесполезное использование "транспортер-тягач"
+% Можно ли убрать нумерацию для введения, но оставить в оглавлении?
+% 
+%====================================================
+
+
+\include{style}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyhf{}  % очищаем все колонтитулы
+\fancyfoot[C]{\thepage}  % номер страницы по центру внизу
+\renewcommand{\headrulewidth}{0pt}  % убираем линию вверху
+
+\include{chaprters/title}
+
+\clearpage
+\tableofcontents
+
+\include{chaprters/introduction}
+
+\include{chaprters/maintenance}
+
+\include{chaprters/storage}
+
+\include{chaprters/process_map}
+
+\appendix
+
+\include{chaprters/main_data}
+
+\include{chaprters/lubricant_table}
+
+\include{chaprters/capacitive_data}
+
+\end{document}

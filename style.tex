@@ -1,0 +1,101 @@
+% Русский язык и шрифты (XeLaTeX)
+\usepackage{fontspec}
+\usepackage{polyglossia}
+% \usepackage{ragged2e}
+% \RaggedRight
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{setspace}
+
+\setdefaultlanguage{russian}
+\setmainfont{Times New Roman}
+
+\setmonofont{DejaVu Sans Mono}
+\newfontfamily\cyrillicfonttt{DejaVu Sans Mono}
+
+% Нумерация subsubsection
+% \setcounter{secnumdepth}{3}
+
+% Геометрия страницы
+\usepackage[
+    a5paper,
+    inner=20mm,
+    outer=15mm,
+    top=15mm,
+    bottom=20mm
+]{geometry}
+
+% textwidth     = 113,2
+% textheight    = 174,9
+
+
+% Межстрочный интервал
+\usepackage{setspace}
+\onehalfspacing
+
+% Математика
+\usepackage{amsmath,amssymb}
+\newcommand{\celc}[1]{#1$\,^\circ C$}
+
+% Форматирование 
+\newcommand{\range}[2]{#1\,--\,#2}
+\usepackage{makecell}
+
+% Рисунки
+\usepackage{graphicx}
+
+% Гиперссылки
+\usepackage[colorlinks=true]{hyperref}
+
+% Красная строка
+\setlength{\parindent}{1.25cm}
+
+\usepackage{fancyhdr}
+% \usepackage{rotating}
+\usepackage[figuresright]{rotating}
+
+% Таблицы
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage{lscape}
+\newcommand{\tc}{\centering\arraybackslash} % table centering
+
+% Команды
+\newcommand{\logo}{
+
+{\large\bfseries
+Национальный исследовательский университет\\
+«Высшая школа экономики»\\
+Военный учебный центр
+}
+
+\vspace{0.5cm}
+
+\begin{minipage}{0.3\textwidth}
+\centering
+\includegraphics[width=3cm]{src/hse_logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+\centering
+\includegraphics[width=3cm]{src/vuc_logo.png}
+\end{minipage}
+}
+
+\newcommand{\note}[1]{\textit{\textbf{Примечание.} #1}}
+
+% Борьба с переносами
+\tolerance=400
+\emergencystretch=3em
+
+\usepackage{hyphenat}
+\hyphenation{
+  транс-пор-те-ра-тя-га-ча
+}
+
+
+% figure
+\newcommand{\legend}{\small}
+\newenvironment{center_figure}[1]{begdef}{enddef}
