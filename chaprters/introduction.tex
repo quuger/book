@@ -49,12 +49,14 @@
 \begin{sidewaystable}
     \footnotesize
     {
+    \newcommand{\length}{1.97cm}
+    \newcommand{\longlength}{5cm}
     \centering
-    \begin{tabular}{|m{5cm}|>{\tc}m{2cm}|>{\tc}m{2cm}|>{\tc}m{2cm}|>{\tc}m{2cm}|>{\tc}m{2cm}|}
+    \begin{tabular}{|m{\longlength}|>{\tc}m{\length}|>{\tc}m{\length}|>{\tc}m{\length}|>{\tc}m{\length}|>{\tc}m{\length}|}
         \hline
-        \multirow{2}{5cm}{\centering Вид работ} & \multicolumn{5}{c|}{\textbf{Трудозатраты,чел.-час}} \\ 
+        \multirow{2}{\longlength}{\centering Вид работ} & \multicolumn{5}{c|}{\textbf{Трудозатраты, \textit{чел.-час}}} \\ 
         \cline{2-6}
-        & \textbf{Механика-водителя} & \textbf{Механика} & \textbf{Электрика} & \textbf{Слесаря} & \textbf{Общие} \\
+        & \textbf{механика-водителя} & \textbf{механика} & \textbf{электрика} & \textbf{слесаря} & \textbf{общие} \\
         \hline
         Контрольный осмотр перед выходом из~парка & 27--40~мин &~--- &~--- &~--- & 27--40~мин  \\
         \hline
@@ -143,14 +145,15 @@
 \end{sidewaystable}
 
 \begin{table}
+    \newcommand{\length}{1.82cm}
     \centering
-    \begin{tabular}{|m{1.85cm}|m{1.85cm}|m{1.85cm}|m{1.85cm}|m{1.85cm}|}
+    \begin{tabular}{|m{\length}|m{\length}|m{\length}|m{\length}|m{\length}|}
         \hline
-        \multirow{2}{1.85cm}{\centering ЕТО} & \multirow{2}{1.85cm}{\centering ТО-1}  & \multirow{2}{1.85cm}{\centering ТО-2} & \multicolumn{2}{m{4cm}|}{\tc Подготовка к~периоду эксплуатации} \\ 
+        \multirow{2}{\length}{\tc ЕТО} & \multirow{2}{\length}{\tc ТО-1}  & \multirow{2}{\length}{\tc ТО-2} & \multicolumn{2}{m{\dimexpr \length * 2 + 12pt \relax}|}{\tc Подготовка к~периоду эксплуатации} \\ 
         \cline{4-5}
-        &&& \centering летнему & \tc зимнему \\
+        &&& \tc летнему & \tc зимнему \\
         \hline
-        \centering \range{1,2}{2,7} & \centering\range{3,8}{9,4} & \centering\range{10,2}{17,6} & \centering 3,7 & \tc 8 \\ 
+        \tc \range{1,2}{2,7} & \tc\range{3,8}{9,4} & \tc\range{10,2}{17,6} & \tc 3,7 & \tc 8 \\ 
         \hline
     \end{tabular}
     \caption{Простой транспортера-тягача при~техническом обслуживании и~при~подготовке его к~эксплуатации в~летний и~зимний периоды, \textit{ч}}
